@@ -1,2 +1,5 @@
-# Andrey039_infra
-Andrey039 Infra repository
+## Практика IaC сиспользованием Terraformиспользованием Terr
+
+- написан main.tf, определены перенменные в variables.tf, заданы переменные в *.tfvars
+
+
