@@ -13,7 +13,7 @@ PLAY RECAP *********************************************************************
 appserver                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 ### Примитивный скрипт для динамической инвентаризации
-``` ansible app  -m ping -i dynamic_inventore.sh ```
+``` ansible app  -m ping -i dynamic_inventory.sh ```
 Вывод
 ```
 34.77.155.246 | SUCCESS => {
@@ -24,7 +24,7 @@ appserver                  : ok=2    changed=1    unreachable=0    failed=0    s
     "ping": "pong"
 ```
 ### Формируется такой json:
-``` ./dynamic_inventore.sh --list ```
+``` ./dynamic_inventory.sh --list ```
 
 ```
 {
@@ -39,3 +39,4 @@ appserver                  : ok=2    changed=1    unreachable=0    failed=0    s
         }
 }
 ```
+При указании  ``` inventory = dynamic_inventory.sh ```  в ``` ansible.cfg ```  тесты travis не пороходят, хотя локально все отрабатываетя. Вернул на ``` inventory = ./inventory  ```
