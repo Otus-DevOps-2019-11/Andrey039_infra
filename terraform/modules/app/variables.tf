@@ -14,7 +14,7 @@ variable public_key_path {
 }
 variable disk_image {
   description = "Disk image"
-  default     = "reddit-base"
+  default     = "reddit-app-base"
 }
 
 variable privat_key_path {
