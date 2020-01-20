@@ -57,3 +57,4 @@
   - name: reload puma
     become: true
     service: name=puma state=restarted
+
