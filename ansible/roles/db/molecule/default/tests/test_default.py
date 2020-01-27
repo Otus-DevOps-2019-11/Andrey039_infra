@@ -31,7 +31,7 @@ def test_config_file(host):
     config_file = host.file('/etc/mongod.conf')
     assert config_file.contains('bindIp: 0.0.0.0')
     assert config_file.is_file
-
+# check port
 def test_port_listening(host):
     host = host.addr("127.0.0.1")
     assert host.port(27017).is_reachable
